@@ -1,0 +1,14 @@
+.about_second_section {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	&_title {
+		color: #06505b;
+		font-size: 32px;
+		font-style: normal;
+
+		text-decoration: underline;
+		text-underline-offset: 6px;
+	}
+}

@@ -1,0 +1,178 @@
+.aparment_item {
+	// border: 2px solid teal;
+	width: 600px;
+	display: flex;
+	flex-direction: row-reverse;
+	box-shadow: 4px 5px 8px 0px rgba(34, 60, 80, 0.2);
+
+	& .image_container {
+		background-color: white;
+		width: 50%;
+		padding: 10px;
+	}
+
+	&_first_container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		max-width: 420px;
+
+		& .first_photo {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			aspect-ratio: 1;
+		}
+	}
+
+	&_second_container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		max-width: 420px;
+
+		& .second_photo {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			aspect-ratio: 1;
+		}
+	}
+
+	&_third_container {
+		background-color: #06505b;
+		padding: 30px 30px 20px;
+		color: white;
+		width: 50%;
+		border-radius: 0 20px 20px 0;
+
+		& .title {
+			font-size: 14px;
+			font-weight: 500;
+			margin-top: 15px;
+			border: 1px solid white;
+			display: inline-flex;
+			padding: 10px;
+			border-radius: 8px;
+		}
+		& .floor {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+		.numberofArea {
+			font-weight: 600;
+			font-size: 18px;
+		}
+
+		.planning {
+			font-size: 26px;
+			font-weight: 600;
+			.floor_desc {
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			height: 90%;
+			margin-top: 10px;
+			gap: 5px;
+			padding-left: 8px;
+
+			li {
+				font-size: 14px;
+				font-weight: 500;
+				display: flex;
+				gap: 5px;
+				align-items: center;
+				svg {
+					width: 15px;
+
+					circle {
+						stroke: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.aparment_item {
+		// width: 320px;
+
+		& .image_container {
+			background-color: white;
+			width: 50%;
+			padding: 0;
+		}
+
+		&_first_container {
+			max-width: 300px;
+			height: 236.6px;
+		}
+
+		&_second_container {
+			max-width: 300px;
+			max-height: 236.6px;
+		}
+		&_third_container {
+			padding: 20px 0 20px 4px;
+			ul {
+				height: auto;
+				gap: 10px;
+			}
+
+			.planning {
+				font-size: 22px;
+				font-weight: 600;
+				.floor_desc {
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.aparment_item {
+		// width: 390px;
+
+		&_first_container {
+			width: 100%;
+			height: 236.6px;
+		}
+
+		&_second_container {
+			width: 100%;
+			height: 236.6px;
+		}
+		&_third_container {
+			ul {
+				height: auto;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.aparment_item {
+		width: 600px;
+
+		&_first_container {
+			max-width: 390px;
+			height: 236.6px;
+		}
+
+		&_second_container {
+			max-width: 390px;
+			height: 236.6px;
+		}
+	}
+}
